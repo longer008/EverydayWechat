@@ -22,6 +22,8 @@ jobs:
     - name: install dependencies
       run: |
         pip install -r requirements.txt
+    - name: Set selected color
+      run: echo "::debug::Set the Octocat variable"
     - name: excute script
       run: |
         python run.py
